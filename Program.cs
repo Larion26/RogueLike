@@ -17,9 +17,9 @@ namespace Roguelike
             Console.Write("ENTER YOUR USERNAME: ");
             string username = Console.ReadLine();
             Console.WriteLine();
-            //Console.SetCursorPosition(43, 5);
-            //Console.WriteLine($"WELCOME TO THE END OF THE WORLD, DEAR {username}");
-            //Console.WriteLine();
+            Console.SetCursorPosition(43, 5);
+            Console.WriteLine($"WELCOME TO THE END OF THE WORLD, DEAR {username}");
+            Console.WriteLine();
             Console.SetCursorPosition(54, 6);
             Console.WriteLine("Have a good game!");
 
@@ -121,7 +121,7 @@ namespace Roguelike
             {
                 rnd_x = random.Next(width);
                 rnd_y = random.Next(height);
-            } while (map[rnd_x, rnd_y] != '#');
+            } while (map[rnd_x, rnd_y] != ' ');
 
             // Устанавливаю символ игрока на найденную позицию
             Player.X = rnd_x;
@@ -135,10 +135,10 @@ namespace Roguelike
             {
                 for (int x = 0; x < width; x++)
                 {
-                    if (map[x, y] == '#')
-                    { Console.Write("#"); }
-                    else
+                    if (map[x, y] == ' ')
                     { Console.Write(" "); }
+                    else
+                    { Console.Write("#"); }
                 }
                 Console.WriteLine();
             }
@@ -158,34 +158,34 @@ namespace Roguelike
                 ConsoleKeyInfo keyInfo = Console.ReadKey(true);
 
                 // Перемещение игрока в зависимости от выбранного направления 
-                if (keyInfo.Key == ConsoleKey.UpArrow && map[Player.X, Player.Y - 1] == '#')
+                if (keyInfo.Key == ConsoleKey.UpArrow && map[Player.X, Player.Y - 1] == ' ')
                 {
                     Console.SetCursorPosition(Player.X, Player.Y);
-                    Console.Write("#"); // Восстананавливаю символ комнаты на старой позиции игрока 
+                    Console.Write(" "); // Восстананавливаю символ комнаты на старой позиции игрока 
                     Player.Y--;
                     Console.SetCursorPosition(Player.X, Player.Y);
                     Console.Write("@"); // Устанавливаю символ игрока на новой позиции 
                 }
-                else if (keyInfo.Key == ConsoleKey.DownArrow && map[Player.X, Player.Y + 1] == '#')
+                else if (keyInfo.Key == ConsoleKey.DownArrow && map[Player.X, Player.Y + 1] == ' ')
                 {
                     Console.SetCursorPosition(Player.X, Player.Y);
-                    Console.Write("#"); // Восстанавливаю символ комнаты на старой позиции игрока 
+                    Console.Write(" "); // Восстанавливаю символ комнаты на старой позиции игрока 
                     Player.Y++;
                     Console.SetCursorPosition(Player.X, Player.Y);
                     Console.Write("@"); // Устанавливаю символ игрока на новой позиции 
                 }
-                else if (keyInfo.Key == ConsoleKey.LeftArrow && map[Player.X - 1, Player.Y] == '#')
+                else if (keyInfo.Key == ConsoleKey.LeftArrow && map[Player.X - 1, Player.Y] == ' ')
                 {
                     Console.SetCursorPosition(Player.X, Player.Y);
-                    Console.Write("#"); // Восстанавливаю символ комнаты на старой позиции игрока 
+                    Console.Write(" "); // Восстанавливаю символ комнаты на старой позиции игрока 
                     Player.X--;
                     Console.SetCursorPosition(Player.X, Player.Y);
                     Console.Write("@"); // Устанавливаю символ игрока на новой позиции 
                 }
-                else if (keyInfo.Key == ConsoleKey.RightArrow && map[Player.X + 1, Player.Y] == '#')
+                else if (keyInfo.Key == ConsoleKey.RightArrow && map[Player.X + 1, Player.Y] == ' ')
                 {
                     Console.SetCursorPosition(Player.X, Player.Y);
-                    Console.Write("#"); // Восстанавливаю символ комнаты на старой позиции игрока 
+                    Console.Write(" "); // Восстанавливаю символ комнаты на старой позиции игрока 
                     Player.X++;
                     Console.SetCursorPosition(Player.X, Player.Y);
                     Console.Write("@"); // Устанавливаю символ игрока на новой позиции 
