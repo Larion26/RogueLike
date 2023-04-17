@@ -6,7 +6,7 @@ class MapGenerator
     //private int width, height;
     public int width;
     public int height;
-    private bool[,] map;
+    private char[,] map;
     private Random rng = new Random();
     public bool IsWithinBounds(int x, int y)
     {
@@ -17,10 +17,10 @@ class MapGenerator
     {
         this.width = width;
         this.height = height;
-        this.map = new bool[width, height];
+        this.map = new char[width, height];
     }
 
-    public bool[,] Generate()
+    public char[,] Generate()
     {
         // Генерирую комнаты
         List<Room> rooms = new List<Room>();
@@ -74,7 +74,7 @@ class MapGenerator
 
                 if (ax >= 0 && ax < width && ay >= 0 && ay < height)
                 {
-                    map[ax, ay] = true;
+                    map[ax, ay] = ' ';
                 }
             }
         }
@@ -88,7 +88,7 @@ class MapGenerator
                 {
                     if (x >= 0 && x < width && y >= 0 && y < height)
                     {
-                        map[x, y] = true;
+                        map[x, y] = ' ';
                     }
                 }
             }
@@ -117,4 +117,30 @@ class MapGenerator
             return !(X + Width <= other.X || other.X + other.Width <= X || Y + Height <= other.Y || other.Y + other.Height <= Y);
         }
     }
+    ////золото
+    //for (int i = 0; i < 10; i++)
+    //{
+    //    int x = rng.Next(width);
+    //    int y = rng.Next(height);
+    //    if (map[x, y])
+    //    {
+    //        map[x, y] = false; //чистка позиции
+    //        Console.SetCursorPosition(x, y);
+    //        Console.Write("$"); 
+    //    }
+    //}
+
+    //// сундуки
+    //for (int i = 0; i < 5; i++)
+    //{
+    //    int x = rng.Next(width);
+    //    int y = rng.Next(height);
+    //    if (map[x, y])
+    //    {
+    //        map[x, y] = false; 
+    //        Console.SetCursorPosition(x, y);
+    //        Console.Write("C"); 
+    //    }
+    //}
 }
+
