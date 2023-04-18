@@ -1,0 +1,15 @@
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\bin\Debug\net6.0\Roguelike_class.exe
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\bin\Debug\net6.0\Roguelike_class.deps.json
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\bin\Debug\net6.0\Roguelike_class.runtimeconfig.json
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\bin\Debug\net6.0\Roguelike_class.dll
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\bin\Debug\net6.0\Roguelike_class.pdb
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\Roguelike_class.csproj.AssemblyReference.cache
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\Roguelike_class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\Roguelike_class.AssemblyInfoInputs.cache
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\Roguelike_class.AssemblyInfo.cs
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\Roguelike_class.csproj.CoreCompileInputs.cache
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\Roguelike_class.dll
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\refint\Roguelike_class.dll
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\Roguelike_class.pdb
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\Roguelike_class.genruntimeconfig.cache
+C:\Users\Илларион\Desktop\Учеба\коды\Roguelike_class\Roguelike_class\obj\Debug\net6.0\ref\Roguelike_class.dll
